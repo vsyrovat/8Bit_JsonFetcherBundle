@@ -1,5 +1,8 @@
 # Learn more about services, parameters and containers at
 # https://symfony.com/doc/current/service_container.html
+imports:
+    - { resource: "@JsonFetcherBundle/Resources/config/services.yml" }
+
 parameters:
     #parameter_name: value
 
@@ -33,3 +36,6 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    JsonFetcherBundle\Service\JsonFetcher:
+        arguments: ['@eight_points_guzzle.client.default']

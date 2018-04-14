@@ -1,0 +1,3 @@
+json_fetcher_homepage:
+    path:     /
+    defaults: { _controller: JsonFetcherBundle:Default:index }

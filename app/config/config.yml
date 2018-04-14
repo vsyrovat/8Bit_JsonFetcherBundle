@@ -65,3 +65,9 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+# EightPoints Guzzle Configuration
+eight_points_guzzle:
+    logging: true
+    clients:
+        default: ~

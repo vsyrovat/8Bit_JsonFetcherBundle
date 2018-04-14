@@ -38,4 +38,5 @@ services:
     #         $someArgument: 'some_value'
 
     JsonFetcherBundle\Service\JsonFetcher:
+        public: true
         arguments: ['@eight_points_guzzle.client.default']
